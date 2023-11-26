@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+</head>
+<body>
+    <div class="grid_container">
+        <!-- _______header -->
+        <header class="header">
+            <i class="material-icons-outlined menu_bar">menu</i>
+            <div class="search">
+                <input type="text" name="search" id="search"
+                placeholder="search">
+                <span class="material-icons-outlined">search</span>
+            </div>
+            <div class="header_icon">
+                <span class="material-icons-outlined">notifications</span>
+                <span class="material-icons-outlined">message</span>
+                <span class="material-icons-outlined">report</span>
+            </div>
+        </header>
+        <!-- ______--navigation-side -->
+        <aside class="aside list">
+            <i class="material-icons-outlined close">close</i>
+         <div class="icons main_icon">
+            <i class="material-icons-outlined">dashboard</i>
+              <p>HRM</p>          
+         </div>
+         <div>
+            <div class="icons">
+               <i class="material-icons-outlined">content_copy</i>
+               <p>Offers</p>
+           </div>
+            <div class="icons">
+                <i class="material-icons-outlined">description</i>
+                 <p>documents</p>
+            </div>
+            <div class="icons">
+                <i class="material-icons-outlined">people</i>
+                 <p>people</p>
+             </div>
+             <div class="icons">
+                <i class="material-icons-outlined">equalizer</i>
+                 <p>statistic</p>
+             </div>
+             <div class="icons">
+                <i class="material-icons-outlined">sms</i>
+                 <p>chat</p>
+             </div>
+             <div class="icons">
+                <i class="material-icons-outlined">info</i>
+                 <p>suport</p>
+             </div>
+             <div class="icons">
+                <i class="material-icons-outlined">calendar_month</i>
+                <p>calendar</p>
+            </div>
+            <div class="icons">
+                <i class="material-icons-outlined">settings</i>
+                <p>settings</p>
+            </div>
+         </div>
+        </aside>
+        <!-- __________--main-section -->
+        <main class="main">
+            <div class="title">
+                dashboard
+            </div>
+            <div class="main_boxes">
+                <div class="box">
+                    <div class="box1">
+                        <p>total emoloyees</p>
+                    </div>
+                    <div class="rates">
+                        <span>309</span>
+                        <div class="ratesup">
+                            <span class="material-icons-outlined">trending_up</span>
+                            <span>+15%</span>
+                        </div>
+                    </div>
+                </div> 
+                <div class="box">
+                    <div class="box1">
+                        <p>number of leaves</p>
+                    </div>
+                    <div class="rates">
+                        <span>309</span>
+                        <div>
+                            <span class="material-icons-outlined">trending_down</span>
+                            <span>-15%</span>
+                        </div>
+                    </div>
+                </div> 
+                <div class="box">
+                    <div class="box1">
+                        <p>new emoloyees</p>
+                    </div>
+                    <div class="rates">
+                        <span>309</span>
+                        <div class="ratesup">
+                            <span class="material-icons-outlined">trending_up</span>
+                            <span>+10%</span>
+                        </div>
+                    </div>
+                </div>  
+                <div class="box">
+                    <div class="box1">
+                        <p>happiness rate</p>
+                    </div>
+                    <div class="rates">
+                        <span>309</span>
+                        <div>
+                            <span class="material-icons-outlined">trending_down</span>
+                            <span>-15%</span>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <!-- __________charts______________ -->
+            <div class="charts">
+                <div class="cards">
+                    <p>top 5 products</p>
+                    <div id="bar-chart"></div>
+                </div>
+                <div class="cards">
+                    <p>purchase and sales orders</p>
+                    <div id="mixed-chart"></div>
+                </div>
+            </div>
+            <div class="charts_last">
+                <div class="cards_last">
+                    <p>recruitment progress</p>
+                    <div id="horizontal_bar"></div>
+                  </div>
+                <div class="cards_last">
+                  <p>working format</p>
+                  <div id="circle_bar"></div>
+                </div>
+                <div class="cards_last">
+                    <img src="pic1.png" alt="">
+                    <h2>Do you want to get better result</h2>
+                    <button>Upgrade</button>
+                </div>
+            </div>
+            </main>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.44.0/apexcharts.min.js" integrity="sha512-9ktqS1nS/L6/PPv4S4FdD2+guYGmKF+5DzxRKYkS/fV5gR0tXoDaLqqQ6V93NlTj6ITsanjwVWZ3xe6YkObIQQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+           <script src="index.js"></script>
+</body>
+</html>
